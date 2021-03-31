@@ -2,9 +2,9 @@
     <li class="d-flex list-group-item">
       <button 
         class="btn border-0 flex-grow-1 text-left shadow-none"
-        v-bind:class="{ checked: todo.completed }"
+        :class="{ 'checked': todo.completed }"
         @click="completeTodo"  
-      > <span>{{todo.text }}</span> </button>
+      > {{todo.text }} </button>
       <button 
         v-on:click="deleteTodo"
         class="btn btn-outline-danger border-0"
